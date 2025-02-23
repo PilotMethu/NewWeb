@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women's Collection - Trendy Treads</title>
+    <title>Trendy Treads</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="cartfun" href="cart.js">
 </head>
 <body>
     <nav class="navbar">
@@ -37,40 +38,97 @@
         </div>
     </nav>
 
-    <div class="featured-products" style="margin-top: 100px;">
-        <div class="section-header">
-            <h2>Women's Collection</h2>
-            <p>Explore our women's fashion range</p>
-        </div>
-        <div class="product-grid">
-            <div class="product-card fade-in">
-                <img src="https://i.pinimg.com/736x/cc/22/16/cc2216b435b917b91e60e5b0372b569c.jpg" alt="Women's Fashion" class="product-image">
-                <div class="product-info">
-                    <h3>The "IT" Sneakers</h3>
-                    <p>$49.99</p>
-                    <button class="btn-primary add-to-cart" data-id="w1" data-name="Elegant White Blouse" data-price="49.99">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card fade-in">
-                <img src="https://i.pinimg.com/736x/13/34/20/133420086b4ffc63fb07cae859438b76.jpg" alt="Women's Fashion" class="product-image">
-                <div class="product-info">
-                    <h3>Pink and White Adidas Samba</h3>
-                    <p>$129.99</p>
-                    <button class="btn-primary add-to-cart" data-id="w2" data-name="Designer Handbag" data-price="129.99">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card fade-in">
-                <img src="https://i.pinimg.com/736x/22/29/92/222992755256d8b85c68a52a74e90e1e.jpg" alt="Women's Fashion" class="product-image">
-                <div class="product-info">
-                    <h3>Leather Boots</h3>
-                    <p>$99.99</p>
-                    <button class="btn-primary add-to-cart" data-id="w3" data-name="Leather Boots" data-price="99.99">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
+    <section class="featured-products" id="featuredProducts">
+        <div class="section-header">
+            <h2>Featured Collection</h2>
+            <p>Discover our most popular styles</p>
+            <div class="product-grid" style="margin-top: 2rem;">
+                <div class="product-card fade-in">
+                    <img src="https://i.pinimg.com/736x/cc/22/16/cc2216b435b917b91e60e5b0372b569c.jpg" alt="Women's Fashion" class="product-image">
+                    <div class="product-info">
+                        <h3>The "IT" Sneakers</h3>
+                        <p>$49.99</p>
+                        <button class="btn-primary add-to-cart" data-id="w1" data-name="Elegant White Blouse" data-price="49.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <img src="https://i.pinimg.com/736x/13/34/20/133420086b4ffc63fb07cae859438b76.jpg" alt="Women's Fashion" class="product-image">
+                    <div class="product-info">
+                        <h3>Pink and White Adidas Samba</h3>
+                        <p>$129.99</p>
+                        <button class="btn-primary add-to-cart" data-id="w2" data-name="Designer Handbag" data-price="129.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <img src="https://i.pinimg.com/736x/22/29/92/222992755256d8b85c68a52a74e90e1e.jpg" alt="Women's Fashion" class="product-image">
+                    <div class="product-info">
+                        <h3>Leather Boots</h3>
+                        <p>$99.99</p>
+                        <button class="btn-primary add-to-cart" data-id="w3" data-name="Leather Boots" data-price="99.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+
+   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Trendy Treads offers premium footwear for the modern fashion enthusiast.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Men's Collection</a></li>
+                    <li><a href="#">Women's Collection</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Trendy Treads. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cartModal" class="cart-popup">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="cart-close">&times;</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <strong>Total: $<span id="cartTotal">0</span></strong>
+        </div>
+        <button class="btn-primary" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+    <div id="cartOverlay" class="cart-overlay"></div>
+
     <script src="cart.js"></script>
 </body>
 </html>
