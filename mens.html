@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection - Trendy Treads</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="cartfun" href="cart.js">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <h1 class="logo">TRENDY TREADS</h1>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="mens.html" class="nav-link">Men</a>
+                <a href="womens.html" class="nav-link">Women</a>
+                <a href="sales.html" class="nav-link">Sale</a>
+                <a href="profile.html" class="nav-link" id="profileLink" style="display: none;">Profile</a>
+                <a href="auth.html" class="nav-link" id="authLink">Sign In</a>
+            </div>
+
+            <div class="nav-icons">
+                <button class="icon-btn" id="cartBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm3-18H5.82L5 0H0v2h3.18l3.82 12H20l2-12h-3zM7 14l-2-8h13.64l-1.33 8H7z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="featured-products" style="margin-top: 100px;">
+        <div class="section-header">
+            <h2>Men's Collection</h2>
+            <p>Discover our latest men's fashion</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/21/74/4e/21744ec925a9d77f15ade156317d6e65.jpg" alt="Men's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Newest italian oxford shoes</h3>
+                    <p>$59.99</p>
+                    <button class="btn-primary add-to-cart" data-id="m1" data-name="Classic Checkered Shirt" data-price="59.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/58/d5/60/58d56094ec3dac0d3b921490580da05d.jpg" alt="Men's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Custom Nike Dunk Low White Mocha</h3>
+                    <p>$89.99</p>
+                    <button class="btn-primary add-to-cart" data-id="m2" data-name="Casual Denim Jacket" data-price="89.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/f1/10/e0/f110e0b6eef7441708ed529c4029db49.jpg" alt="Men's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Nike SB x Air Jordan 4</h3>
+                    <p>$79.99</p>
+                    <button class="btn-primary add-to-cart" data-id="m3" data-name="Urban Sneakers" data-price="79.99">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/e8/e2/64/e8e264f6f883b182dcb4d195728aa26f.jpg" alt="Men's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Adidas Race Sneakers</h3>
+                    <p>$59.99</p>
+                    <button class="btn-primary add-to-cart" data-id="m1" data-name="Classic Checkered Shirt" data-price="59.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/2d/f1/e3/2df1e3cfaf58b6e6fad01fe9653346fb.jpg" alt="Men's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Custom Nike Dunk Low White Mocha</h3>
+                    <p>$89.99</p>
+                    <button class="btn-primary add-to-cart" data-id="m2" data-name="Casual Denim Jacket" data-price="89.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/04/23/fb/0423fbbcb6e155f40fe6345caf9ad790.jpg" alt="Men's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>2022 OLYMPIAN CREED SNEAKERS</h3>
+                    <p>$79.99</p>
+                    <button class="btn-primary add-to-cart" data-id="m3" data-name="Urban Sneakers" data-price="79.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

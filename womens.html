@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection - Trendy Treads</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <h1 class="logo">TRENDY TREADS</h1>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="mens.html" class="nav-link">Men</a>
+                <a href="womens.html" class="nav-link">Women</a>
+                <a href="sales.html" class="nav-link">Sale</a>
+                <a href="profile.html" class="nav-link" id="profileLink" style="display: none;">Profile</a>
+                <a href="auth.html" class="nav-link" id="authLink">Sign In</a>
+            </div>
+
+            <div class="nav-icons">
+                <button class="icon-btn" id="cartBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm3-18H5.82L5 0H0v2h3.18l3.82 12H20l2-12h-3zM7 14l-2-8h13.64l-1.33 8H7z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="featured-products" style="margin-top: 100px;">
+        <div class="section-header">
+            <h2>Women's Collection</h2>
+            <p>Explore our women's fashion range</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/cc/22/16/cc2216b435b917b91e60e5b0372b569c.jpg" alt="Women's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>The "IT" Sneakers</h3>
+                    <p>$49.99</p>
+                    <button class="btn-primary add-to-cart" data-id="w1" data-name="Elegant White Blouse" data-price="49.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/13/34/20/133420086b4ffc63fb07cae859438b76.jpg" alt="Women's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Pink and White Adidas Samba</h3>
+                    <p>$129.99</p>
+                    <button class="btn-primary add-to-cart" data-id="w2" data-name="Designer Handbag" data-price="129.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/22/29/92/222992755256d8b85c68a52a74e90e1e.jpg" alt="Women's Fashion" class="product-image">
+                <div class="product-info">
+                    <h3>Leather Boots</h3>
+                    <p>$99.99</p>
+                    <button class="btn-primary add-to-cart" data-id="w3" data-name="Leather Boots" data-price="99.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

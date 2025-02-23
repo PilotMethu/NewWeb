@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale Items - Trendy Treads</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <h1 class="logo">TRENDY TREADS</h1>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="mens.html" class="nav-link">Men</a>
+                <a href="womens.html" class="nav-link">Women</a>
+                <a href="sales.html" class="nav-link">Sale</a>
+                <a href="profile.html" class="nav-link" id="profileLink" style="display: none;">Profile</a>
+                <a href="auth.html" class="nav-link" id="authLink">Sign In</a>
+            </div>
+
+            <div class="nav-icons">
+                <button class="icon-btn" id="cartBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm3-18H5.82L5 0H0v2h3.18l3.82 12H20l2-12h-3zM7 14l-2-8h13.64l-1.33 8H7z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="featured-products" style="margin-top: 100px;">
+        <div class="section-header">
+            <h2>Sale Items</h2>
+            <p>Great deals on selected items</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/86/97/ee/8697ee7534857bf46332f8ff2b4da7df.jpg" alt="Sale Items" class="product-image">
+                <div class="product-info">
+                    <h3>Reebok</h3>
+                    <p><s>$79.99</s> $39.99</p>
+                    <button class="btn-primary add-to-cart" data-id="s1" data-name="Summer Dress" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/a6/c1/29/a6c1295fa15e82398b8d0b71aa4cf5c3.jpg" alt="Sale Items" class="product-image">
+                <div class="product-info">
+                    <h3>Nike Casual Shoes</h3>
+                    <p><s>$69.99</s> $34.99</p>
+                    <button class="btn-primary add-to-cart" data-id="s2" data-name="Casual Shoes" data-price="34.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://i.pinimg.com/736x/bd/05/4a/bd054a8f903a75d395863794c7e38668.jpg" alt="Sale Items" class="product-image">
+                <div class="product-info">
+                    <h3>Air Jordan’s 4 retro Women edition</h3>
+                    <p><s>$45.99</s> $22.99</p>
+                    <button class="btn-primary add-to-cart" data-id="s3" data-name="Leather Belt" data-price="22.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
